@@ -16,19 +16,19 @@ To run the Python Script you do not need any special libraries, only the librari
 
 * Q1. What is the number of unique hosts?
 
-```shell
+```
 A1-> Number of unique hosts: 137978
 ```
 
 * Q2. The total number of 404 errors?
 
-```shell
+```
 A2-> Total log number 404 found = 20890
 ```
 
 * Q3. Top 5 URLs that caused 404 errors?
 
-```shell
+```
 A3-> Top 5 URLs that cause 404 errors:
 ('/pub/winvn/readme.txt', 2004)
 ('/pub/winvn/release.txt', 1732)
@@ -39,7 +39,7 @@ A3-> Top 5 URLs that cause 404 errors:
 
 * Q4. How many 404 errors occurred per day?
 
-```shell
+```
 A4-> Number of 404 codes per day/count:
 1995-07-22 - 192
 1995-07-23 - 233
@@ -102,7 +102,16 @@ A4-> Number of 404 codes per day/count:
 ```
 * Q5. The total number of bytes returned by clients?
 
-```shell
+```
 A5-> Total bytes returned:
 (count: 3460360, mean: 18935.441238194595, stdev: 73043.86403436471, max: 6823936, min: 0)
 ```
+
+ ### Testing ###
+ 
+ To test the code it is necessary to be with spark configured as already described above, then just execute the command:
+ 
+ ```shell
+ spark-submit main.py
+```
+ 
