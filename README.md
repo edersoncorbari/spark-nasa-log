@@ -2,7 +2,7 @@
 
 Churning the logs of NASA Kennedy Space Center WWW server.
 
-In the address below we can download the datasets of the server NASA Kennedy to do some analysis using PySpark.
+You can check the page here: http://ita.ee.lbl.gov/html/contrib/NASA-HTTP.html
 
 ## Requirements
 
