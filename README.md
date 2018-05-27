@@ -1,2 +1,2 @@
 # scala-test
-Tests using scala
+AATests using scala
