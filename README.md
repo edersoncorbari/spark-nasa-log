@@ -6,7 +6,7 @@ In the address below we can download the datasets of the server NASA Kennedy to 
 
 ## Requirements
 
-It is necessary to install Spark in your environment, the test was done in a virtual machine with Ubuntu 16.04 following the tutorial below:
+It is necessary to install Spark in your environment, the test was done in a virtual machine with [Ubuntu](https://www.ubuntu.com/) 16.04 LTS following the tutorial below:
 
 * [Setting up Apache Spark](https://www.inertia7.com/projects/36);
 
