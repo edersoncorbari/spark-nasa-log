@@ -29,7 +29,7 @@ A2-> Total log number 404 found = 20890
 * Q3. Top 5 URLs that caused 404 errors?
 
 ```shell
--> Top 5 URLs that cause 404 errors:
+A3-> Top 5 URLs that cause 404 errors:
 ('/pub/winvn/readme.txt', 2004)
 ('/pub/winvn/release.txt', 1732)
 ('/shuttle/missions/STS-69/mission-STS-69.html', 683)
@@ -102,5 +102,7 @@ A4-> Number of 404 codes per day/count:
 ```
 * Q5. The total number of bytes returned by clients?
 
-A5 = AA
-
+```shell
+A5-> Total bytes returned:
+(count: 3460360, mean: 18935.441238194595, stdev: 73043.86403436471, max: 6823936, min: 0)
+```
