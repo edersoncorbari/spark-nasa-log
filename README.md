@@ -121,3 +121,5 @@ Now run the script in the same directory where you downloaded the files.
 ```shell
 spark-submit main.py
 ```
+
+You should get the same ![Log](https://www.github.com/edersoncorbari/spark-nasa-log/master/main.log) result!
