@@ -109,9 +109,15 @@ A5-> Total bytes returned:
 
  ### Testing ###
  
- To test the code it is necessary to be with spark configured as already described above, then just execute the command:
+ To test the code it is necessary to be with Spark configured as already described above, then just execute the command:
  
- ```shell
- spark-submit main.py
+```shell
+wget --no-cache ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
+wget --no-cache ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz
 ```
- 
+
+Now run the script in the same directory where you downloaded the files.
+
+```shell
+spark-submit main.py
+```
