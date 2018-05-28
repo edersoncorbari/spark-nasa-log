@@ -2,7 +2,7 @@
 
 Churning the logs of NASA Kennedy Space Center WWW server.
 
-In the address below we can download the datasets of the server NASA Kennedy to do some analysis using PySpark.
+You can check the page here: http://ita.ee.lbl.gov/html/contrib/NASA-HTTP.html
 
 ## Requirements
 
@@ -16,20 +16,20 @@ To run the Python Script you do not need any special libraries, only the librari
 
 * Q1. What is the number of unique hosts?
 
-```shell
+```
 A1-> Number of unique hosts: 137978
 ```
 
 * Q2. The total number of 404 errors?
 
-```shell
+```
 A2-> Total log number 404 found = 20890
 ```
 
 * Q3. Top 5 URLs that caused 404 errors?
 
-```shell
--> Top 5 URLs that cause 404 errors:
+```
+A3-> Top 5 URLs that cause 404 errors:
 ('/pub/winvn/readme.txt', 2004)
 ('/pub/winvn/release.txt', 1732)
 ('/shuttle/missions/STS-69/mission-STS-69.html', 683)
@@ -39,7 +39,7 @@ A2-> Total log number 404 found = 20890
 
 * Q4. How many 404 errors occurred per day?
 
-```shell
+```
 A4-> Number of 404 codes per day/count:
 1995-07-22 - 192
 1995-07-23 - 233
@@ -102,5 +102,27 @@ A4-> Number of 404 codes per day/count:
 ```
 * Q5. The total number of bytes returned by clients?
 
-A5 = AA
+```
+A5-> Total bytes returned:
+(count: 3460360, mean: 18935.441238194595, stdev: 73043.86403436471, max: 6823936, min: 0)
+```
 
+ ### Testing ###
+ 
+ To test the code it is necessary to be with Spark configured as already described above, then just execute the command:
+ 
+```shell
+wget --no-cache ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
+wget --no-cache ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz
+```
+
+Now run the script in the same directory where you downloaded the files.
+
+```shell
+export PYSPARK_PYTHON=python3
+spark-submit main.py
+```
+
+You should get the same ![Log](https://github.com/edersoncorbari/spark-nasa-log/blob/master/main.log) result!
+
+It's the end :-)
