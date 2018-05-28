@@ -1,0 +1,19 @@
+A1. Para melhorar a performance do processamento, você pode optar pelo cache em armazemaneto dos tipos: raw-storage ou serialized.
+
+A2. Porque usa computação em memória, sendo assim os dados estão na RAM em vez de estarem no disco, e também faz uso de processamento
+distribuído.
+
+A3. É usado para criar uma conexão com o cluster, e pode ser usado para criar RDD's.
+
+A4. Um RDD é uma coleção de registros particionados somente para leitura, são estruturas fundamentais do Spark, em um
+RDD pode conter objetos do tipo Python, Java, Scala. O Spark utiliza o conceito de RDD para deixar as operações de MapReduce
+mais rápidas e eficientes.
+
+A5. As duas funções producem o mesmo efeito, porém para grandes datasets é mais indicado usar o reduceByKey(), porque o Spark
+combina os pares na mesma máquina antes que os dados sejam embaralhados, em seguida a função é chamada novamente para reduzir
+todos os valores, assim produzindo um resultado final. No caso do groupByKey() todos os pares são alternados, transferindo
+dados na rede que são desnecessários.
+
+A6. O código faz algumas trasformações para criar um conjundo de dados do tipo string e inteiro que é chamado de counts,
+em seguida salva a informações no arquivo.
+
