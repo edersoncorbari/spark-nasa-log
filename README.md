@@ -119,6 +119,7 @@ wget --no-cache ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz
 Now run the script in the same directory where you downloaded the files.
 
 ```shell
+export PYSPARK_PYTHON=python3
 spark-submit main.py
 ```
 
